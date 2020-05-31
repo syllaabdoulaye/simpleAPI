@@ -13,7 +13,16 @@ namespace simpleAPI.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Louga", "Saint-Louis", "Dakar", "Thies", "Matam", "Ziguinchor", "Kaolack", "Faick", "Diourbel", "Tambacounda"
+            "Louga", 
+            "Saint-Louis", 
+            "Dakar", 
+            "Thies", 
+            "Matam", 
+            "Ziguinchor", 
+            "Kaolack", 
+            "Faick", 
+            "Diourbel", 
+            "Tambacounda"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
@@ -27,7 +36,7 @@ namespace simpleAPI.Controllers
         public ActionResult<IEnumerable<WeatherForecast>> Get()
         {
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            return Enumerable.Range(1, 9).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
