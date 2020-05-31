@@ -13,7 +13,7 @@ namespace simpleAPI.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Louga", "Saint-Louis", "Dakar", "Thies", "Matam", "Ziguinchor", "Kaolack", "Faick", "Diourbel", "Tambacounda"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
